@@ -1,0 +1,45 @@
+* {
+	box-sizing: border-box;
+}
+
+.container {
+	width: 500px;
+	margin: 0 auto;
+}
+
+.container::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.brand-logo {
+	width: 200px;
+	height: 200px;
+	background-image: url('personal_logo_256x256.png');
+	background-size: 100%;
+	float: left;
+}
+
+form {
+	width: 300px;
+	height: 200px;
+	float: right;
+	position: relative;
+}
+
+input {
+	width: 100%;
+	border: 1px solid #650000;
+	padding: 0.5em;
+	border-radius: 5px;
+	margin: 0 0.5em 0.8em 0.5em;
+	text-align: center;
+}
+
+input[type='submit'] {
+	position: absolute;
+	margin-bottom: 0;
+	bottom: 0;
+	cursor: pointer;
+}
