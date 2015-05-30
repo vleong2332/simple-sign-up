@@ -6,14 +6,14 @@ mainApp.controller('mainCtrl', function() {
 mainApp.directive('myTitle', function() {
 	return {
 		restrict: 'E',
-		templateUrl: 'templates/_title.html'
+		templateUrl: 'templates/title.html'
 	}
 });
 
 mainApp.directive('myForm', function() {
 	return {
 		restrict: "E",
-		templateUrl: "templates/_form.html"
+		templateUrl: "templates/form.html"
 	}
 });
 
@@ -74,6 +74,6 @@ mainApp.directive('submitButton', function() {
 mainApp.directive('myFooter', function() {
 	return {
 		restrict: "E",
-		templateUrl: "templates/_footer.html"
+		templateUrl: "templates/footer.html"
 	}
 });
