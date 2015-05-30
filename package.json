@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/vleong2332/simple-sign-up/issues"
   },
-  "homepage": "https://github.com/vleong2332/simple-sign-up"
+  "homepage": "https://github.com/vleong2332/simple-sign-up",
+  "devDependencies": {
+    "jasmine-core": "^2.3.4",
+    "jquery": "^2.1.4",
+    "karma": "^0.12.35",
+    "karma-jasmine": "^0.3.5",
+    "karma-ng-html2js-preprocessor": "^0.1.2"
+  }
 }
