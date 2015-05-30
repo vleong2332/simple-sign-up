@@ -1,0 +1,13 @@
+{
+  "name": "app",
+  "version": "0.0.0",
+  "homepage": "https://github.com/vleong2332/simple-sign-up",
+  "authors": [
+    "VICKY LEONG <VLEONG2332@GMAIL.COM>"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "angular": "~1.4.0",
+    "angular-mocks": "~1.4.0"
+  }
+}

@@ -1,13 +1,19 @@
 var mainApp = angular.module('simpleSignUp', []);
 
 mainApp.controller('mainCtrl', function() {
+});
 
+mainApp.directive('myTitle', function() {
+	return {
+		restrict: 'E',
+		templateUrl: 'templates/_title.html'
+	}
 });
 
 mainApp.directive('myForm', function() {
 	return {
 		restrict: "E",
-		templateUrl: "_form.html"
+		templateUrl: "templates/_form.html"
 	}
 });
 
@@ -32,7 +38,7 @@ mainApp.directive('firstName', function() {
 	return {
 		restrict: "E",
 		require: "^signUpForm",
-		template: "<input name='first-name' type='text' placeholder='first name' required />",
+		template: "<input name='first-name' type='text' placeholder='First Name' required />",
 		transclude: true,
 		replace: true
 	}
@@ -41,7 +47,7 @@ mainApp.directive('lastName', function() {
 	return {
 		restrict: "E",
 		require: "^signUpForm",
-		template: "<input name='last-name' type='text' placeholder='last name' required />",
+		template: "<input name='last-name' type='text' placeholder='Last Name' required />",
 		transclude: true,
 		replace: true
 	}
@@ -50,7 +56,7 @@ mainApp.directive('email', function() {
 	return {
 		restrict: "E",
 		require: "^signUpForm",
-		template: "<input name='email' type='text' placeholder='email' required />",
+		template: "<input name='email' type='text' placeholder='Email' required />",
 		transclude: true,
 		replace: true
 	}
@@ -59,8 +65,15 @@ mainApp.directive('submitButton', function() {
 	return {
 		restrict: "E",
 		require: "^signUpForm",
-		template: "<input name='submit' type='submit' value='Giv us yr infoz' />",
+		template: "<button id='submit' type='submit'>Giv Me Yr Infoz</button>",
 		transclude: true,
 		replace: true
+	}
+});
+
+mainApp.directive('myFooter', function() {
+	return {
+		restrict: "E",
+		templateUrl: "templates/_footer.html"
 	}
 });

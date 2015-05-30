@@ -1,0 +1,62 @@
+* {
+	box-sizing: border-box;
+	font-family: 'Josefin Sans', Arial, sans-serif;
+}
+
+#title-wrapper, .container, #footer-wrapper {
+	width: 320px;
+	margin: 0 auto;
+	text-align: center;
+}
+#title-wrapper h1 {
+	font-family: 'Josefin Sans Semibold', Arial, sans-serif;
+	font-size: 2.25em;
+	margin-bottom: 0.25em;
+}
+#title-wrapper h2 {
+	font-family: 'Josefin Sans Thin', Arial, sans-serif;
+	margin-top: 0.25em;
+}
+
+.container::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.brand-logo {
+	width: 100px;
+	height: 100px;
+	background-image: url('../img/personal_logo_256x256.png');
+	background-size: 100%;
+	margin: 3em auto;
+}
+
+form {
+	width: 320px;
+	margin: 0 auto;
+	position: relative;
+}
+
+input {
+	width: 100%;
+	border: 1px solid #999;
+	padding: 0.5em;
+	border-radius: 5px;
+	margin: 0 0 1em 0;
+	text-align: center;
+}
+
+button {
+	width: 200px;
+	padding: 0.5em 0;
+	display: block;
+	margin: 0 auto;
+}
+
+#footer-wrapper {
+	margin-top: 3em;
+	border-top: 1px solid #BBB;
+	text-align: left;
+	color: #BBB;
+}
